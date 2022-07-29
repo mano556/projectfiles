@@ -38,8 +38,6 @@ public class TeacherServiceStub {
 	}
 
 	public static List<Teacher> updateTeacher(Long id, Teacher teacher) {
-		
-		//System.out.println("updating");
 		 teacher.setId(id);
 		 teachers.put(id,teacher);
         return new ArrayList<>(teachers.values());

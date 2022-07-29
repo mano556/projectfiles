@@ -1,7 +1,12 @@
 package com.crud.crud;
 
-public class Teacher {
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
 
+@Document(collection="Collection_1")
+public class Teacher {
+	
+	@Id
 	private Long id;
 
 	private String name;
